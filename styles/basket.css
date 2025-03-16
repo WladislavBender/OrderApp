@@ -1,0 +1,134 @@
+#overlayBtn {
+    display: none;
+}
+
+.basketWrapper {
+    width: 400px;
+    flex-grow: 1;
+    border-left: 1px solid rgb(0, 0, 0, 0.3);
+    padding: 16px;
+}
+
+.quantityPriceSpace {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapperDesign {
+    padding: 24px 0;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
+    margin-bottom: 8px;
+}
+
+.basketItem {
+    h3 {
+        padding: 8px 0;
+    }
+}
+
+.emptyItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+        margin: 56px 0;
+    }
+}
+
+#basketWrapper {
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255);
+    z-index: 2;
+}
+
+#overlayContent {
+    display: none;
+}
+
+#overlayContent.show {
+    display: block;
+}
+
+.overlayBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    padding: 18px 32%;
+    background-color: #0069da;
+}
+
+#orderField {
+    height: 500px;
+    overflow: auto;
+}
+
+.allCosts {
+    padding-top: 36px;
+}
+
+#orderButton {
+    display: none;
+    border: 2px solid black;
+    margin-top: 24px;
+    border-radius: 12px;
+    background-color: #32a304;
+}
+
+#orderOverlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f28933;
+    color: white;
+    padding: 190px 50px;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    font-size: 48px;
+    text-align: center;
+    z-index: 1001;
+}
+
+#basketCount {
+    background-color: #f28933;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.orderInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 128px;
+        padding-top: 16px;
+    }
+    p{
+        color: white;
+    }
+}

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: myFont;
+    src: url(assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f28933;
+    padding: 8px;
+    h1{
+        color: white;
+    }
+    div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #f28933;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+        height: 128px;
+        margin: -20px 0;
+    }
+    span{
+        color: white;
+    }
+}
+
+.content{
+    display: flex;
+}
+
+.mainContent {
+    width: 100%;
+}
+
+.mainContent.full-width {
+    width: 100%;
+}
+
+.basket {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f28933;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: wheat;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellapp</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icons/bestellapp_logo.png">
+
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/templates.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body onload="renderSelection()">
+    <header>
+        <div>
+            <img src="./assets/icons/bestellapp_logo.png" alt="Logo">
+            <h1>Bestellapp</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <section class="mainContent">
+                <div>
+                    <div class="topContent">
+                        <img class="mainImg" src="./assets/img/main_background.jpg" alt="Noodle Image">
+                        <img class="noodleImg" src="./assets/img/main_noodle.png" alt="Noodle Logo">
+                    </div>
+                    <div class="mainDescription">
+                        <h2>Paradise Noodles</h2>
+                        <p>Bewertung (4,2 von 5 Sternen)</p>
+                    </div>
+                    <div class="mainSelection" id="mainSelection"></div>
+                </div>
+            </section>
+            <section class="basketWrapper" id="basketWrapper">
+                <div class="basket">
+                    <h2>Warenkorb</h2>
+                    <div id="orderField">
+                        <div class="wrapperDesign" id="wrapperData">
+                        </div>
+                    </div>
+                    <div class="allCosts">
+                        <div id="subtotal"></div>
+                        <div id="delivery"></div>
+                        <div id="total"></div>
+                    </div>
+
+                    <button id="orderButton" onclick="placeOrder()">Bestellung aufgeben</button>
+                </div>
+            </section>
+
+            <div id="orderOverlay">
+                <div class="orderInput">
+                    <p>Vielen Dank für deine Bestellung!</p>
+                    <img src="./assets/icons/bestellapp_logo.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+
+        <div id="toggleOverlay">
+            <div id="overlay">
+                <button class="offBtn" onclick="toggleOverlay(false)">Warenkorb</button>
+                <div id="overlayContent"></div>
+            </div>
+        </div>
+
+        <div id="removeBtn">
+            <button id="overlayBtn" onclick="toggleOverlay(true)">Warenkorb <span id="basketCount">0</span></button>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./assets/img/developer akademie-logo.png" alt="">
+        <span>© 2024 von Wladislav Bender</span>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>

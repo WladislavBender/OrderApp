@@ -1,0 +1,206 @@
+@media (max-width: 1000px) {
+    .mainDescription {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .noodleImg {
+        height: 88px;
+    }
+}
+
+@media (max-width: 815px) {
+    .noodleImg {
+        height: 80px;
+    }
+
+    .mainDescription {
+        h2 {
+            padding-top: 8px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .selectionStyle {
+        h3 {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .basketWrapper {
+        width: 320px;
+    }
+}
+
+@media (min-width: 651px) {
+    #toggleOverlay {
+        display: none;
+    }
+
+    #overlay #overlayContent.show {
+        display: none;
+    }
+
+    #basketWrapper {
+        display: block;
+    }
+
+    #overlayBtn {
+        display: none;
+    }
+
+    #removeBtn {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .offBtn {
+        display: block;
+        position: fixed;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        color: rgb(255, 255, 255);
+        border: 2px solid;
+        padding: 18px 32%;
+        background-color: #0069da;
+    }
+
+    .offBtn:hover {
+        background-color: rgb(210, 210, 215);
+        color: #0069da;
+    }
+
+    #overlayBtn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        color: rgb(255, 255, 255);
+        border: 2px solid;
+        padding: 4px 32%;
+        background-color: #0069da;
+    }
+
+    #overlayBtn:hover {
+        background-color: rgb(210, 210, 215);
+        color: #0069da;
+    }
+
+    .wrapperDesign {
+        margin-top: 96px;
+    }
+
+    #toggleBasket {
+        display: none;
+    }
+
+    #overlay {
+        h2 {
+            display: none;
+        }
+    }
+
+    .basketItem {
+        padding: 24px;
+    }
+
+    .allCosts {
+        padding: 32px 24px;
+    }
+
+    .mainDescription {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .noodleImg {
+        height: 88px;
+    }
+
+    #orderButton{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .noodleImg {
+        height: 72px;
+    }
+
+    .mainDescription {
+        h2 {
+            padding-top: 30px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .selectionStyle {
+        h3 {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .mainImg {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    #overlayBtn {
+        padding: 18px 30%;
+        font-size: 24px;
+    }
+
+    .offBtn {
+        padding: 18px 30%;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 390px) {
+    #overlayBtn {
+        padding: 18px 24%;
+    }
+
+    .offBtn {
+        padding: 18px 24%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    #orderButton{
+        margin-left: 0;
+    }
+}
